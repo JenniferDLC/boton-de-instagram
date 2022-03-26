@@ -1,0 +1,83 @@
+
+
+
+.mydiv{
+
+position: absolute;
+height:20rem;
+width:20rem;
+display:flex;
+background: linear-gradient(150deg, #eba102, #f10271, #00c298);
+/*background: radial-gradient(
+circle at 33% 100%,
+#fed373 4%,
+#f15245 30%,
+#d92e7f 62%,
+#9b36b7 85%,
+#515ecf
+);*/
+
+border-radius:30%;
+background-size:400% 300% ;
+
+animation: BgGradient 5s ease infinite;
+
+}
+
+@keyframes BgGradient {
+
+0%{background-position: 0% 50%;}
+50%{background-position: 100% 50%;}
+100%{backgound-position:0% 50%;}
+
+}
+
+.mydiv:before{
+
+content: '';
+border:1rem solid #fff ;
+border-radius:30%;
+width: 12.5rem;
+height: 12.5rem;
+left: 0;
+right:0;
+position:absolute;
+margin:auto;
+top:0;
+bottom:0; 
+
+
+}
+
+.mydiv:after{
+
+content: '';
+border: 1rem solid #fff ;
+border-radius: 100%;
+width:5rem;
+height:5rem;
+left:0;
+right:0;
+position:absolute;
+margin:auto;
+top:0;
+bottom:0;
+
+
+}
+
+span{
+
+content: '';
+border: 1rem solid #fff ;
+border-radius: 100%;
+width:0;
+height:0;
+right:5rem;
+position:absolute;
+margin:auto;
+top:5rem;
+
+
+}
+
